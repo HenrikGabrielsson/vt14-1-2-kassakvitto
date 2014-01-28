@@ -42,46 +42,18 @@ namespace ReceiptWriter.Model
             }
         }
 
+
         public Double Total
         {
             get;
             set;
         }
 
-        //konstruktor
-        public Receipt(double subtotal)
-        {
-            Calculate(subtotal);
-        }
-
-        //metod som räknar ut rabatten och priset efter eventuell prissänkning
+        //metod som räknar ut rabatten och priset efter eventuell prissänkning //EJ KLAR
         public void Calculate(double subtotal)
         {
             Subtotal = subtotal;
 
-            //Bestäm räntesatsen
-            if(Subtotal <= 499)
-            {
-                DiscountRate = 0;
-            }
-            else if (Subtotal >= 500 && Subtotal <= 999)
-            {
-                DiscountRate = 0.05;
-            }
-            else if(Subtotal >= 1000 && Subtotal <= 4999)
-            {
-                DiscountRate = 0.1;
-            }
-            else if(Subtotal >= 5000)
-            {
-                DiscountRate = 0.15;
-            }
-
-            //räntan i kronor
-            MoneyOff = Subtotal * DiscountRate;
-
-            //total kostnad
-            Total = Subtotal - MoneyOff;
 
         }
 
