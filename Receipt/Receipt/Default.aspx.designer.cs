@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Receipt {
+namespace ReceiptWriter {
     
     
     public partial class Default {
