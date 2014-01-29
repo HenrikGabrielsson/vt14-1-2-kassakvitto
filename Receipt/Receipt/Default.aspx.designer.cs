@@ -31,13 +31,13 @@ namespace ReceiptWriter {
         protected global::System.Web.UI.WebControls.Panel FormDiv;
         
         /// <summary>
-        /// TotalCost control.
+        /// Cost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalCost;
+        protected global::System.Web.UI.WebControls.TextBox Cost;
         
         /// <summary>
         /// CalculateButton control.
@@ -47,5 +47,77 @@ namespace ReceiptWriter {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CalculateButton;
+        
+        /// <summary>
+        /// ReceiptPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel ReceiptPanel;
+        
+        /// <summary>
+        /// ReceiptTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptTitle;
+        
+        /// <summary>
+        /// ReceiptPhone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptPhone;
+        
+        /// <summary>
+        /// ReceiptOpenHours control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptOpenHours;
+        
+        /// <summary>
+        /// ReceiptSubtotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptSubtotal;
+        
+        /// <summary>
+        /// ReceiptDiscountRate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptDiscountRate;
+        
+        /// <summary>
+        /// ReceiptMoneyOff control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptMoneyOff;
+        
+        /// <summary>
+        /// ReceiptTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ReceiptTotal;
     }
 }

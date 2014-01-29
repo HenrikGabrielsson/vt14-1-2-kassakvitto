@@ -9,15 +9,24 @@
 <body>
     <form id="CostForm" runat="server">
         <asp:Panel ID="FormDiv" runat="server" DefaultButton="CalculateButton" >  
-            <label for="TotalCost">Total köpesumma: </label>
-            <asp:TextBox ID="TotalCost" runat="server"></asp:TextBox>
+            <label for="Cost">Total köpesumma: </label>
+            <asp:TextBox ID="Cost" runat="server"></asp:TextBox>
             <asp:Button ID="CalculateButton" runat="server" Text="Skriv kvitto" OnClick="CalculateButton_Click" />
         </asp:Panel>
-
+        
     </form>
 
-    <div id="receiptDiv">
+    <%-- Kvittot som ska skrivas ut--%>
+    <asp:Panel ID="ReceiptPanel" runat="server" Visible="false">
+        <asp:Label ID="ReceiptTitle" runat="server" Text="DerpStore"></asp:Label>
+        <asp:Label ID="ReceiptPhone" runat="server" Text="Telefon: 0761-223344"></asp:Label>
+        <asp:Label ID="ReceiptOpenHours" runat="server" Text="Öppettider 8 -17"></asp:Label>
 
-    </div>
+        <p>Totalt: <asp:Label ID="ReceiptSubtotal" runat="server"></asp:Label></p>
+        <p>Rabattsats: <asp:Label ID="ReceiptDiscountRate" runat="server"></asp:Label></p>
+        <p>Rabatt: <asp:Label ID="ReceiptMoneyOff" runat="server"></asp:Label></p>
+        <p>Att betala: <asp:Label ID="ReceiptTotal" runat="server"></asp:Label></p>   
+    </asp:Panel>
+
 </body>
 </html>

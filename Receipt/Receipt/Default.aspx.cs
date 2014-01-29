@@ -12,11 +12,23 @@ namespace ReceiptWriter
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TotalCost.Focus();
+            Cost.Focus();
         }
 
         protected void CalculateButton_Click(object sender, EventArgs e)
         {
+            //skapa ett nytt Receipt
+            var cost = double.Parse(Cost.Text);
+            Receipt receipt = new Receipt(cost);
+
+            //skapa och visa kvittot
+            ReceiptSubtotal.Text += receipt.Subtotal;
+            ReceiptDiscountRate.Text += receipt.DiscountRate;
+            ReceiptMoneyOff.Text += receipt.MoneyOff;
+            ReceiptTotal.Text += receipt.Total;
+
+            ReceiptPanel.Visible = true;
+
 
         }
     }
