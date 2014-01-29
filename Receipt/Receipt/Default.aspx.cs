@@ -17,17 +17,20 @@ namespace ReceiptWriter
 
         protected void CalculateButton_Click(object sender, EventArgs e)
         {
-            //skapa ett nytt Receipt
-            var cost = double.Parse(Cost.Text);
-            Receipt receipt = new Receipt(cost);
+            if (IsValid)
+            {
+                //skapa ett nytt Receipt
+                var cost = double.Parse(Cost.Text);
+                Receipt receipt = new Receipt(cost);
 
-            //skapa och visa kvittot
-            ReceiptSubtotal.Text += String.Format("{0:c}",receipt.Subtotal);
-            ReceiptDiscountRate.Text += String.Format("{0:p}",receipt.DiscountRate);
-            ReceiptMoneyOff.Text += String.Format("{0:c}",receipt.MoneyOff);
-            ReceiptTotal.Text += String.Format("{0:c}",receipt.Total);
+                //skapa och visa kvittot
+                ReceiptSubtotal.Text += String.Format("{0:c}", receipt.Subtotal);
+                ReceiptDiscountRate.Text += String.Format("{0:p}", receipt.DiscountRate);
+                ReceiptMoneyOff.Text += String.Format("{0:c}", receipt.MoneyOff);
+                ReceiptTotal.Text += String.Format("{0:c}", receipt.Total);
 
-            ReceiptPanel.Visible = true;
+                ReceiptPanel.Visible = true;
+            }
 
 
         }

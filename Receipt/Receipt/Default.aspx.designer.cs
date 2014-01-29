@@ -76,33 +76,6 @@ namespace ReceiptWriter {
         protected global::System.Web.UI.WebControls.Panel ReceiptPanel;
         
         /// <summary>
-        /// ReceiptTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ReceiptTitle;
-        
-        /// <summary>
-        /// ReceiptPhone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ReceiptPhone;
-        
-        /// <summary>
-        /// ReceiptOpenHours control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ReceiptOpenHours;
-        
-        /// <summary>
         /// ReceiptSubtotal control.
         /// </summary>
         /// <remarks>

@@ -4,9 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Kassakvitto</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
+    <h1>Kassakvitto</h1>
     <form id="CostForm" runat="server">
         <asp:Panel ID="FormDiv" runat="server" DefaultButton="CalculateButton" >  
             
@@ -25,14 +28,17 @@
 
     <%-- Kvittot som ska skrivas ut--%>
     <asp:Panel ID="ReceiptPanel" runat="server" Visible="false">
-        <asp:Label ID="ReceiptTitle" runat="server" Text="DerpStore"></asp:Label>
-        <asp:Label ID="ReceiptPhone" runat="server" Text="Telefon: 0761-223344"></asp:Label>
-        <asp:Label ID="ReceiptOpenHours" runat="server" Text="Öppettider 8 -17"></asp:Label>
+        <h2>Some Store</h2>
+        <p class="info">Telefon: 0761-223344</p>
+        <p class="info">Öppettider 8 -17</p>
 
-        <p>Totalt: <asp:Label ID="ReceiptSubtotal" runat="server"></asp:Label></p>
-        <p>Rabattsats: <asp:Label ID="ReceiptDiscountRate" runat="server"></asp:Label></p>
-        <p>Rabatt: <asp:Label ID="ReceiptMoneyOff" runat="server"></asp:Label></p>
-        <p>Att betala: <asp:Label ID="ReceiptTotal" runat="server"></asp:Label></p>   
+        <p>Totalt: <asp:Label ID="ReceiptSubtotal" CssClass="receiptRow" runat="server"></asp:Label></p>
+        <p>Rabattsats: <asp:Label ID="ReceiptDiscountRate" CssClass="receiptRow" runat="server"></asp:Label></p>
+        <p>Rabatt: <asp:Label ID="ReceiptMoneyOff" CssClass="receiptRow" runat="server"></asp:Label></p>
+        <p>Att betala: <asp:Label ID="ReceiptTotal" CssClass="receiptRow" runat="server"></asp:Label></p>   
+
+        <p class="info">Välkommen åter!</p>
+
     </asp:Panel>
 
 </body>
