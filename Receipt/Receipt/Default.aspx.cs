@@ -22,10 +22,10 @@ namespace ReceiptWriter
             Receipt receipt = new Receipt(cost);
 
             //skapa och visa kvittot
-            ReceiptSubtotal.Text += receipt.Subtotal;
-            ReceiptDiscountRate.Text += receipt.DiscountRate;
-            ReceiptMoneyOff.Text += receipt.MoneyOff;
-            ReceiptTotal.Text += receipt.Total;
+            ReceiptSubtotal.Text += String.Format("{0:c}",receipt.Subtotal);
+            ReceiptDiscountRate.Text += String.Format("{0:p}",receipt.DiscountRate);
+            ReceiptMoneyOff.Text += String.Format("{0:c}",receipt.MoneyOff);
+            ReceiptTotal.Text += String.Format("{0:c}",receipt.Total);
 
             ReceiptPanel.Visible = true;
 
